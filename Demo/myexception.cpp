@@ -17,7 +17,7 @@ void MyException::raise() const
 	throw *this;
 }
 
-QException *MyException::clone() const
+QExceptionBase::Base *MyException::clone() const
 {
 	return new MyException{*this};
 }

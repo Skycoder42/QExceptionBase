@@ -18,8 +18,10 @@
 class Q_EXCEPTION_BASE_EXPORT QExceptionBase : public Q_EXCEPTION_BASE_CLASS
 {
 public:
+	using Base = Q_EXCEPTION_BASE_CLASS;
+
 	virtual void raise() const Q_EXCEPTION_BASE_OR;
-	virtual Q_EXCEPTION_BASE_CLASS *clone() const Q_EXCEPTION_BASE_OR;
+	virtual Base *clone() const Q_EXCEPTION_BASE_OR;
 };
 
 //Q_EXCEPTION_BASE_NS_END

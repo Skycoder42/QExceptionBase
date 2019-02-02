@@ -6,7 +6,7 @@ void QExceptionBase::raise() const
 	throw *this;
 }
 
-Q_EXCEPTION_BASE_CLASS *QExceptionBase::clone() const
+QExceptionBase::Base *QExceptionBase::clone() const
 {
 	return new QExceptionBase{*this};
 }

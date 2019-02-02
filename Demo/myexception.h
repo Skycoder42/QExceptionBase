@@ -16,7 +16,7 @@ public:
 
 	const char *what() const noexcept override;
 	void raise() const override;
-	QException *clone() const override;
+	Base *clone() const override;
 
 private:
 	const QByteArray _msg;
